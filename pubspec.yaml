@@ -1,0 +1,42 @@
+name: crop_disease_management
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  tflite: ^1.0.3
+  http: ^1.2.2  # Updated version
+  url_launcher: ^6.0.10
+  image_picker: ^1.1.2  # Updated version
+  flutter_localizations:
+    sdk: flutter
+  google_fonts: ^6.2.1  # Updated version
+  fl_chart: ^0.69.0  # Updated to the latest stable version
+  cupertino_icons: ^1.0.6
+  permission_handler: ^11.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: "^0.14.1"  # Updated to the latest version
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/icon.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
+  # Add your asset directories here
+  assets:
+    - assets/images/  # Directory for images
+    - assets/model_unquant.tflite  # TensorFlow Lite model
+    - assets/labels.txt  # Labels for the model
